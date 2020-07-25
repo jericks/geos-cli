@@ -1,0 +1,6 @@
+[requires]
+geos/3.8.1
+gtest/1.10.0
+
+[generators]
+cmake
