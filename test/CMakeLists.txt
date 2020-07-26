@@ -1,6 +1,8 @@
 ADD_EXECUTABLE(tests 
     BufferCommandTest.cpp
     CentroidCommandTest.cpp
+    ConvexHullCommandTest.cpp
+    EnvelopeCommandTest.cpp
 )
 target_link_libraries(tests 
     geos-cmds 
