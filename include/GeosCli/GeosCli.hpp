@@ -7,3 +7,4 @@
 #include "GeosCli/CentroidCommand.hpp"
 #include "GeosCli/ConvexHullCommand.hpp"
 #include "GeosCli/EnvelopeCommand.hpp"
+#include "GeosCli/ListCommand.hpp"

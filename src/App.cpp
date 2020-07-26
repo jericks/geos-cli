@@ -5,6 +5,7 @@
 int main(int argc, char const *argv[]) {
 
     CLI::App app{"GEOS CLI"};
+    app.require_subcommand(1);
 
     Commands commands;
     BufferCommand bufferCommand(&app);
@@ -15,6 +16,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&convexHullCommand);
     EnvelopeCommand envelopeCommand(&app);
     commands.add(&envelopeCommand);
+    ListCommand listCommand(&app, &commands);
+    commands.add(&listCommand);
 
     CLI11_PARSE(app, argc, argv);
     

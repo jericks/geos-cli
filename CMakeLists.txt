@@ -14,6 +14,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/CentroidCommand.cpp 
     src/ConvexHullCommand.cpp
     src/EnvelopeCommand.cpp
+    src/ListCommand.cpp
 )
 
 add_executable(geos-cli src/App.cpp)
