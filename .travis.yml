@@ -1,0 +1,33 @@
+language: cpp
+
+install:
+  - pip install --user conan cmake
+
+jobs:
+  include:
+
+    - os: linux
+      dist: bionic
+      compiler: gcc
+      env:
+        - GCC_VER="9"
+        - MATRIX_EVAL="CC=gcc-${GCC_VER} && CXX=g++-${GCC_VER}"
+
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - gcc-9
+            - g++-9
+            - doxygen
+
+before_script:
+  - eval "${MATRIX_EVAL}"
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ../
+  - cmake --build . -- -j2
+  - ctest -j2
