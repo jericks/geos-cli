@@ -1,8 +1,5 @@
 language: cpp
 
-install:
-  - pip install --user conan cmake
-
 jobs:
   include:
 
@@ -18,6 +15,8 @@ jobs:
           sources:
             - ubuntu-toolchain-r-test
           packages:
+            - python3
+            - python3-pip
             - gcc-9
             - g++-9
             - doxygen
@@ -26,6 +25,7 @@ before_script:
   - eval "${MATRIX_EVAL}"
 
 script:
+  - pip install --user conan cmake
   - mkdir build
   - cd build
   - conan ../
