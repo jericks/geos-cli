@@ -28,6 +28,7 @@ before_script:
 script:
   - mkdir build
   - cd build
+  - conan ../
   - cmake ../
   - cmake --build . -- -j2
   - ctest -j2
