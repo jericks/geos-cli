@@ -3,6 +3,8 @@ ADD_EXECUTABLE(tests
     CentroidCommandTest.cpp
     ConvexHullCommandTest.cpp
     EnvelopeCommandTest.cpp
+    InteriorPointCommandTest.cpp
+    ListCommandTest.cpp
 )
 target_link_libraries(tests 
     geos-cmds 

@@ -16,6 +16,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&convexHullCommand);
     EnvelopeCommand envelopeCommand(&app);
     commands.add(&envelopeCommand);
+    InteriorPointCommand interiorPointCommand(&app);
+    commands.add(&interiorPointCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
 
