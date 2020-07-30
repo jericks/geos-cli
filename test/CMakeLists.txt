@@ -7,7 +7,7 @@ ADD_EXECUTABLE(tests
     ListCommandTest.cpp
 )
 target_link_libraries(tests 
-    geos-cmds 
+    geos-cmds
     ${CONAN_LIBS_GEOS} 
     ${CONAN_LIBS_GTEST} 
     ${CONAN_LIBS_GTEST_MAIN}
