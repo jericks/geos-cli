@@ -19,8 +19,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
 )
 
 add_executable(geos-cli src/App.cpp)
-target_link_libraries(geos-cli ${CONAN_LIBS_GEOS})
-target_link_libraries(geos-cli geos-cmds)
+target_link_libraries(geos-cli geos-cmds ${CONAN_LIBS_GEOS})
 
 enable_testing()
 add_subdirectory(test)
