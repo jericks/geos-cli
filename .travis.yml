@@ -17,6 +17,7 @@ jobs:
           packages:
             - python3
             - python3-pip
+            - python3-setuptools
             - gcc-9
             - g++-9
             - doxygen

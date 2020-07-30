@@ -20,6 +20,7 @@ Build
 mkdir build
 cd build
 conan install ..
-conan -g "Unix Makefiles" .
-conant --build .
+cmake -g "Unix Makefiles" .
+cmake --build .
+ctest --verbose
 ```
