@@ -25,7 +25,7 @@ before_script:
   - eval "${MATRIX_EVAL}"
 
 script:
-  - pip3 install --user conan cmake
+  - pip3 install conan
   - mkdir build
   - cd build
   - conan install ../
