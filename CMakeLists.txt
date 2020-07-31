@@ -8,7 +8,7 @@ conan_basic_setup()
 
 include_directories("${PROJECT_SOURCE_DIR}/include")
 
-add_library(geos-cmds STATIC src/Commands.cpp 
+add_library(geos-cmds src/Commands.cpp 
     src/Command.cpp 
     src/BufferCommand.cpp 
     src/CentroidCommand.cpp 
@@ -19,11 +19,10 @@ add_library(geos-cmds STATIC src/Commands.cpp
 )
 
 add_executable(geos-cli src/App.cpp)
-target_link_libraries(geos-cli 
+target_link_libraries(geos-cli PRIVATE
     ${CONAN_LIBS_GEOS}
     geos-cmds 
 )
 
 enable_testing()
 add_subdirectory(test)
-
