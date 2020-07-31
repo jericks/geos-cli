@@ -17,10 +17,10 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/InteriorPointCommand.cpp
     src/ListCommand.cpp
 )
-target_link_libraries(geos-cmds ${CONAN_LIBS_GEOS})
 
 add_executable(geos-cli src/App.cpp)
 target_link_libraries(geos-cli 
+    ${CONAN_LIBS_GEOS}
     geos-cmds 
 )
 
