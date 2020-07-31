@@ -18,11 +18,17 @@ add_library(geos-cmds src/Commands.cpp
     src/ListCommand.cpp
 )
 
-add_executable(geos-cli src/App.cpp)
-target_link_libraries(geos-cli PRIVATE
-    ${CONAN_LIBS_GEOS}
-    geos-cmds 
+add_executable(geos-cli src/App.cpp
+    src/Commands.cpp 
+    src/Command.cpp 
+    src/BufferCommand.cpp 
+    src/CentroidCommand.cpp 
+    src/ConvexHullCommand.cpp
+    src/EnvelopeCommand.cpp
+    src/InteriorPointCommand.cpp
+    src/ListCommand.cpp
 )
+target_link_libraries(geos-cli ${CONAN_LIBS_GEOS})
 
 enable_testing()
 add_subdirectory(test)
