@@ -31,5 +31,5 @@ script:
   - cd build
   - conan install ../
   - cmake ../
-  - cmake --build .
+  - cmake --build  . --verbose
   - ctest --verbose
