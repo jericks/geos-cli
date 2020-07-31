@@ -9,10 +9,11 @@ void InteriorPointCommand::execute(std::istream& istream, std::ostream& ostream)
     if (options.geometry.empty()) {
         std::getline(istream, options.geometry);
     }
-    geos::io::WKTReader reader;
-    auto geometry = reader.read(options.geometry);
-    geos::io::WKTWriter writer;
-    auto centroid = geometry->getInteriorPoint();
-    auto wkt = writer.write(centroid.get());
+    GEOSGeometry* geom = GEOSGeomFromWKT(options.geometry.c_str());
+    GEOSGeometry* outGeom = GEOSPointOnSurface(geom);
+    char* wkt = GEOSGeomToWKT(outGeom); 
+    GEOSGeom_destroy(geom);
+    GEOSGeom_destroy(outGeom);
+    ostream << wkt << std::endl;
     ostream << wkt << std::endl;
 }

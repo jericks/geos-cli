@@ -9,10 +9,10 @@ void CentroidCommand::execute(std::istream& istream, std::ostream& ostream) {
     if (options.geometry.empty()) {
         std::getline(istream, options.geometry);
     }
-    geos::io::WKTReader reader;
-    auto geometry = reader.read(options.geometry);
-    geos::io::WKTWriter writer;
-    auto centroid = geometry->getCentroid();
-    auto wkt = writer.write(centroid.get());
+    GEOSGeometry* geom = GEOSGeomFromWKT(options.geometry.c_str());
+    GEOSGeometry* centroidGeom = GEOSGetCentroid(geom);
+    char* wkt = GEOSGeomToWKT(centroidGeom); 
+    GEOSGeom_destroy(geom);
+    GEOSGeom_destroy(centroidGeom);
     ostream << wkt << std::endl;
 }

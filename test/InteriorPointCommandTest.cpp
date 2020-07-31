@@ -17,7 +17,9 @@ TEST(geos_tests, interiorpoint_test) {
   std::istringstream instream;
   std::ostringstream outstream;
 
+  initGEOS(NULL, NULL);
   cmd.execute(instream, outstream);
+  finishGEOS();
 
   ASSERT_EQ(0, outstream.str().rfind("POINT", 0));
 

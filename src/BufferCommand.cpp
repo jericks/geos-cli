@@ -10,10 +10,10 @@ void BufferCommand::execute(std::istream& istream, std::ostream& ostream) {
     if (options.geometry.empty()) {
         std::getline(istream, options.geometry);
     }
-    geos::io::WKTReader reader;
-    auto geometry = reader.read(options.geometry);
-    geos::io::WKTWriter writer;
-    auto buffer = geometry->buffer(options.distance, 10);
-    auto wkt = writer.write(buffer.get());
+    GEOSGeometry* geom = GEOSGeomFromWKT(options.geometry.c_str());
+    GEOSGeometry* bufferGeom = GEOSBuffer(geom, options.distance, 8);
+    char* wkt = GEOSGeomToWKT(bufferGeom); 
+    GEOSGeom_destroy(geom);
+    GEOSGeom_destroy(bufferGeom);
     ostream << wkt << std::endl;
 }
