@@ -1,7 +1,6 @@
 #include <iostream>
 #include "GeosCli/GeosCli.hpp"
 #include "CLI11.hpp"
-#include <geos_c.h>
 
 int main(int argc, char const *argv[]) {
 
@@ -24,16 +23,12 @@ int main(int argc, char const *argv[]) {
 
     CLI11_PARSE(app, argc, argv);
 
-    initGEOS(NULL, NULL);
-
     for(Command* cmd : commands.get()) {
       if (app.got_subcommand(cmd->getName())) {
         cmd->execute(std::cin, std::cout);
         break;
       }
     }
-    
-    finishGEOS();
 
     return 0;
 }

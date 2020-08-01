@@ -17,9 +17,7 @@ TEST(geos_tests, buffer_test) {
   std::istringstream instream;
   std::ostringstream outstream;
 
-  initGEOS(NULL, NULL);
   cmd.execute(instream, outstream);
-  finishGEOS();
   
   ASSERT_EQ(0, outstream.str().rfind("POLYGON", 0));
 
