@@ -3,6 +3,9 @@
 #include "CLI11.hpp"
 #include "GeosCli/Command.hpp"
 #include <geos_c.h>
+#include <geos/io/WKTReader.h>
+#include <geos/io/WKTWriter.h>
+#include <geos/geom/Geometry.h>
 
 class BufferOptions {
     public:
