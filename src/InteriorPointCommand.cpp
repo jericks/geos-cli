@@ -12,7 +12,7 @@ void InteriorPointCommand::execute(std::istream& istream, std::ostream& ostream)
     geos::io::WKTReader reader;
     auto geometry = reader.read(options.geometry);
     geos::io::WKTWriter writer;
-    auto centroid = geometry->getInteriorPoint();
-    auto wkt = writer.write(centroid.get());
+    auto point = geometry->getInteriorPoint();
+    auto wkt = writer.write(point.get());
     ostream << wkt << std::endl;
 }

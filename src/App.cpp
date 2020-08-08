@@ -8,6 +8,8 @@ int main(int argc, char const *argv[]) {
     app.require_subcommand(1);
 
     Commands commands;
+    AreaCommand areaCommand(&app);
+    commands.add(&areaCommand);
     BufferCommand bufferCommand(&app);
     commands.add(&bufferCommand);
     CentroidCommand centroidCommand(&app);
@@ -20,6 +22,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&interiorPointCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
+    VoronoiDiagramCommand voronoiDiagramCommand(&app);
+    commands.add(&voronoiDiagramCommand);
 
     CLI11_PARSE(app, argc, argv);
 

@@ -1,10 +1,12 @@
 ADD_EXECUTABLE(tests 
+    AreaCommandTest.cpp
     BufferCommandTest.cpp
     CentroidCommandTest.cpp
     ConvexHullCommandTest.cpp
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp
     ListCommandTest.cpp
+    VoronoiDiagramCommandTest.cpp
 )
 target_link_libraries(tests 
     geos-cmds
