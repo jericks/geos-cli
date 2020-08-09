@@ -16,6 +16,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&centroidCommand);
     ConvexHullCommand convexHullCommand(&app);
     commands.add(&convexHullCommand);
+    DelaunayTriangulationCommand delaunayTriangulationCommand(&app);
+    commands.add(&delaunayTriangulationCommand);
     EnvelopeCommand envelopeCommand(&app);
     commands.add(&envelopeCommand);
     InteriorPointCommand interiorPointCommand(&app);

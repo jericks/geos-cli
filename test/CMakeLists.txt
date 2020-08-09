@@ -3,6 +3,7 @@ ADD_EXECUTABLE(tests
     BufferCommandTest.cpp
     CentroidCommandTest.cpp
     ConvexHullCommandTest.cpp
+    DelaunayTriangulationCommandTest.cpp
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp
     ListCommandTest.cpp
