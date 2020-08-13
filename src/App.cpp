@@ -10,6 +10,8 @@ int main(int argc, char const *argv[]) {
     Commands commands;
     AreaCommand areaCommand(&app);
     commands.add(&areaCommand);
+    BoundaryCommand boundaryCommand(&app);
+    commands.add(&boundaryCommand);
     BufferCommand bufferCommand(&app);
     commands.add(&bufferCommand);
     CentroidCommand centroidCommand(&app);

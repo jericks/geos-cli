@@ -11,6 +11,7 @@ include_directories("${PROJECT_SOURCE_DIR}/include")
 add_library(geos-cmds STATIC src/Commands.cpp 
     src/Command.cpp 
     src/AreaCommand.cpp
+    src/BoundaryCommand.cpp 
     src/BufferCommand.cpp 
     src/CentroidCommand.cpp 
     src/ConvexHullCommand.cpp

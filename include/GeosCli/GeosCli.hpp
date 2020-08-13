@@ -4,6 +4,7 @@
 #include "GeosCli/Command.hpp"
 
 #include "GeosCli/AreaCommand.hpp"
+#include "GeosCli/BoundaryCommand.hpp"
 #include "GeosCli/BufferCommand.hpp"
 #include "GeosCli/CentroidCommand.hpp"
 #include "GeosCli/ConvexHullCommand.hpp"

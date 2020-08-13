@@ -1,5 +1,6 @@
 ADD_EXECUTABLE(tests 
     AreaCommandTest.cpp
+    BoundaryCommandTest.cpp
     BufferCommandTest.cpp
     CentroidCommandTest.cpp
     ConvexHullCommandTest.cpp
