@@ -3,6 +3,7 @@ ADD_EXECUTABLE(tests
     BoundaryCommandTest.cpp
     BufferCommandTest.cpp
     CentroidCommandTest.cpp
+    ContainsCommandTest.cpp
     ConvexHullCommandTest.cpp
     DelaunayTriangulationCommandTest.cpp
     EnvelopeCommandTest.cpp

@@ -7,6 +7,7 @@
 #include "GeosCli/BoundaryCommand.hpp"
 #include "GeosCli/BufferCommand.hpp"
 #include "GeosCli/CentroidCommand.hpp"
+#include "GeosCli/ContainsCommand.hpp"
 #include "GeosCli/ConvexHullCommand.hpp"
 #include "GeosCli/DelaunayTriangulationCommand.hpp"
 #include "GeosCli/EnvelopeCommand.hpp"

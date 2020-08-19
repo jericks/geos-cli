@@ -14,6 +14,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/BoundaryCommand.cpp 
     src/BufferCommand.cpp 
     src/CentroidCommand.cpp 
+    src/ContainsCommand.cpp
     src/ConvexHullCommand.cpp
     src/DelaunayTriangulationCommand.cpp
     src/EnvelopeCommand.cpp
