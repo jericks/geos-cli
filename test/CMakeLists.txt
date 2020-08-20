@@ -10,6 +10,7 @@ ADD_EXECUTABLE(tests
     InteriorPointCommandTest.cpp
     ListCommandTest.cpp
     VoronoiDiagramCommandTest.cpp
+    WithinCommandTest.cpp
 )
 target_link_libraries(tests 
     geos-cmds

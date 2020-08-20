@@ -21,6 +21,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/InteriorPointCommand.cpp
     src/ListCommand.cpp
     src/VoronoiDiagramCommand.cpp
+    src/WithinCommand.cpp
 )
 
 add_executable(geos-cli src/App.cpp)

@@ -14,3 +14,4 @@
 #include "GeosCli/InteriorPointCommand.hpp"
 #include "GeosCli/ListCommand.hpp"
 #include "GeosCli/VoronoiDiagramCommand.hpp"
+#include "GeosCli/WithinCommand.hpp"

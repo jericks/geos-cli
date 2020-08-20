@@ -30,6 +30,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&listCommand);
     VoronoiDiagramCommand voronoiDiagramCommand(&app);
     commands.add(&voronoiDiagramCommand);
+    WithinCommand withinCommand(&app);
+    commands.add(&withinCommand);
 
     CLI11_PARSE(app, argc, argv);
 
