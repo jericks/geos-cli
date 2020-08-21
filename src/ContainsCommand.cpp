@@ -3,7 +3,7 @@
 ContainsCommand::ContainsCommand(CLI::App* app): Command ("contains") {
     CLI::App* cmd = app->add_subcommand("contains", "Determine if one geometry contains another");
     cmd->add_option("-g", options.geometry, "Geometry");
-    cmd->add_option("-o", options.otherGeometry, "Other Geometry");
+    cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }
 
 void ContainsCommand::execute(std::istream& istream, std::ostream& ostream) {

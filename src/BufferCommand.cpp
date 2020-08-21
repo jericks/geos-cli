@@ -3,7 +3,7 @@
 BufferCommand::BufferCommand(CLI::App* app): Command ("buffer") {
     CLI::App* cmd = app->add_subcommand("buffer", "Buffer a geometry");
     cmd->add_option("-g", options.geometry, "Geometry");
-    cmd->add_option("-d", options.distance, "Distance");
+    cmd->add_option("-d", options.distance, "Distance")->required();
 }
 
 void BufferCommand::execute(std::istream& istream, std::ostream& ostream) {
