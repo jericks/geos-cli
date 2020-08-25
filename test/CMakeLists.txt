@@ -8,6 +8,7 @@ ADD_EXECUTABLE(tests
     DelaunayTriangulationCommandTest.cpp
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp
+    IntersectsCommandTest.cpp
     ListCommandTest.cpp
     VoronoiDiagramCommandTest.cpp
     WithinCommandTest.cpp

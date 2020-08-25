@@ -26,6 +26,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&envelopeCommand);
     InteriorPointCommand interiorPointCommand(&app);
     commands.add(&interiorPointCommand);
+    IntersectsCommand intersectsCommand(&app);
+    commands.add(&intersectsCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
     VoronoiDiagramCommand voronoiDiagramCommand(&app);

@@ -19,6 +19,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/DelaunayTriangulationCommand.cpp
     src/EnvelopeCommand.cpp
     src/InteriorPointCommand.cpp
+    src/IntersectsCommand.cpp
     src/ListCommand.cpp
     src/VoronoiDiagramCommand.cpp
     src/WithinCommand.cpp
