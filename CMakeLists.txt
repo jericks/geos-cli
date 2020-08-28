@@ -17,6 +17,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/ContainsCommand.cpp
     src/ConvexHullCommand.cpp
     src/DelaunayTriangulationCommand.cpp
+    src/DistanceCommand.cpp
     src/EnvelopeCommand.cpp
     src/InteriorPointCommand.cpp
     src/IntersectsCommand.cpp

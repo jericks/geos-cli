@@ -6,6 +6,7 @@ ADD_EXECUTABLE(tests
     ContainsCommandTest.cpp
     ConvexHullCommandTest.cpp
     DelaunayTriangulationCommandTest.cpp
+    DistanceCommandTest.cpp
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp
     IntersectsCommandTest.cpp

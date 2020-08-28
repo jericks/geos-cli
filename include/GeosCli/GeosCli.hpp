@@ -10,6 +10,7 @@
 #include "GeosCli/ContainsCommand.hpp"
 #include "GeosCli/ConvexHullCommand.hpp"
 #include "GeosCli/DelaunayTriangulationCommand.hpp"
+#include "GeosCli/DistanceCommand.hpp"
 #include "GeosCli/EnvelopeCommand.hpp"
 #include "GeosCli/InteriorPointCommand.hpp"
 #include "GeosCli/IntersectsCommand.hpp"

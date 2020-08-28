@@ -22,6 +22,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&convexHullCommand);
     DelaunayTriangulationCommand delaunayTriangulationCommand(&app);
     commands.add(&delaunayTriangulationCommand);
+    DistanceCommand distanceCommand(&app);
+    commands.add(&distanceCommand);
     EnvelopeCommand envelopeCommand(&app);
     commands.add(&envelopeCommand);
     InteriorPointCommand interiorPointCommand(&app);
