@@ -10,6 +10,7 @@ ADD_EXECUTABLE(tests
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp
     IntersectsCommandTest.cpp
+    IsWithinDistanceCommandTest.cpp
     ListCommandTest.cpp
     VoronoiDiagramCommandTest.cpp
     WithinCommandTest.cpp
