@@ -36,6 +36,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&intersectsCommand);
     IsWithinDistanceCommand isWithinDistanceCommand(&app);
     commands.add(&isWithinDistanceCommand);
+    LengthCommand lengthCommand(&app);
+    commands.add(&lengthCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
     VoronoiDiagramCommand voronoiDiagramCommand(&app);

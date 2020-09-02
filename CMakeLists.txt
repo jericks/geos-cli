@@ -25,6 +25,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/IntersectsCommand.cpp
     src/IsWithinDistanceCommand.cpp
     src/ListCommand.cpp
+    src/LengthCommand.cpp
     src/VoronoiDiagramCommand.cpp
     src/WithinCommand.cpp
 )
