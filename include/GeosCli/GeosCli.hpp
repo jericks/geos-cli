@@ -15,6 +15,7 @@
 #include "GeosCli/DistanceCommand.hpp"
 #include "GeosCli/EnvelopeCommand.hpp"
 #include "GeosCli/InteriorPointCommand.hpp"
+#include "GeosCli/IntersectionCommand.hpp"
 #include "GeosCli/IntersectsCommand.hpp"
 #include "GeosCli/IsWithinDistanceCommand.hpp"
 #include "GeosCli/LengthCommand.hpp"
