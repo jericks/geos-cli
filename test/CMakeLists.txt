@@ -8,6 +8,7 @@ ADD_EXECUTABLE(tests
     CountCommandTest.cpp
     CountPointsCommandTest.cpp
     DelaunayTriangulationCommandTest.cpp
+    DifferenceCommandTest.cpp
     DistanceCommandTest.cpp
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp

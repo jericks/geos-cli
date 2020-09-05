@@ -19,6 +19,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/CountCommand.cpp
     src/CountPointsCommand.cpp
     src/DelaunayTriangulationCommand.cpp
+    src/DifferenceCommand.cpp
     src/DistanceCommand.cpp
     src/EnvelopeCommand.cpp
     src/InteriorPointCommand.cpp
