@@ -24,6 +24,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&countCommand);
     CountPointsCommand countPointsCommand(&app);
     commands.add(&countPointsCommand);
+    CoversCommand coversCommand(&app);
+    commands.add(&coversCommand);
     DelaunayTriangulationCommand delaunayTriangulationCommand(&app);
     commands.add(&delaunayTriangulationCommand);
     DifferenceCommand differenceCommand(&app);

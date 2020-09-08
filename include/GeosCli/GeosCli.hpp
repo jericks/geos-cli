@@ -11,6 +11,7 @@
 #include "GeosCli/ConvexHullCommand.hpp"
 #include "GeosCli/CountCommand.hpp"
 #include "GeosCli/CountPointsCommand.hpp"
+#include "GeosCli/CoversCommand.hpp"
 #include "GeosCli/DelaunayTriangulationCommand.hpp"
 #include "GeosCli/DifferenceCommand.hpp"
 #include "GeosCli/DistanceCommand.hpp"
