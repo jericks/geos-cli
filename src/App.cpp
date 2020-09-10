@@ -26,6 +26,10 @@ int main(int argc, char const *argv[]) {
     commands.add(&countPointsCommand);
     CoversCommand coversCommand(&app);
     commands.add(&coversCommand);
+    CoveredByCommand coveredByCommand(&app);
+    commands.add(&coveredByCommand);
+    CrossesCommand crossesCommand(&app);
+    commands.add(&crossesCommand);
     DelaunayTriangulationCommand delaunayTriangulationCommand(&app);
     commands.add(&delaunayTriangulationCommand);
     DifferenceCommand differenceCommand(&app);

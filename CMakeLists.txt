@@ -18,7 +18,9 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/ConvexHullCommand.cpp
     src/CountCommand.cpp
     src/CountPointsCommand.cpp
+    src/CoveredByCommand.cpp
     src/CoversCommand.cpp
+    src/CrossesCommand.cpp
     src/DelaunayTriangulationCommand.cpp
     src/DifferenceCommand.cpp
     src/DistanceCommand.cpp

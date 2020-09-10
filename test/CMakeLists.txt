@@ -7,7 +7,9 @@ ADD_EXECUTABLE(tests
     ConvexHullCommandTest.cpp
     CountCommandTest.cpp
     CountPointsCommandTest.cpp
+    CoveredByCommandTest.cpp
     CoversCommandTest.cpp
+    CrossesCommandTest.cpp
     DelaunayTriangulationCommandTest.cpp
     DifferenceCommandTest.cpp
     DistanceCommandTest.cpp
