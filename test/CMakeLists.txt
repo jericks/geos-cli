@@ -20,6 +20,7 @@ ADD_EXECUTABLE(tests
     IsWithinDistanceCommandTest.cpp
     LengthCommandTest.cpp
     ListCommandTest.cpp
+    TouchesCommandTest.cpp
     VoronoiDiagramCommandTest.cpp
     WithinCommandTest.cpp
 )
