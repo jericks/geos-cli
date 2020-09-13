@@ -12,6 +12,7 @@ ADD_EXECUTABLE(tests
     CrossesCommandTest.cpp
     DelaunayTriangulationCommandTest.cpp
     DifferenceCommandTest.cpp
+    DisjointCommandTest.cpp
     DistanceCommandTest.cpp
     EnvelopeCommandTest.cpp
     InteriorPointCommandTest.cpp
