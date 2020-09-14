@@ -29,6 +29,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/InteriorPointCommand.cpp
     src/IntersectionCommand.cpp
     src/IntersectsCommand.cpp
+    src/IsValidCommand.cpp
     src/IsWithinDistanceCommand.cpp
     src/LengthCommand.cpp
     src/ListCommand.cpp
