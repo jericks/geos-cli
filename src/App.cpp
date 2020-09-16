@@ -46,6 +46,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&intersectionCommand);
     IntersectsCommand intersectsCommand(&app);
     commands.add(&intersectsCommand);
+    IsEmptyCommand isEmptyCommand(&app);
+    commands.add(&isEmptyCommand);
     IsValidCommand isValidCommand(&app);
     commands.add(&isValidCommand);
     IsWithinDistanceCommand isWithinDistanceCommand(&app);
