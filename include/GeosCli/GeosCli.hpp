@@ -23,6 +23,7 @@
 #include "GeosCli/IntersectionCommand.hpp"
 #include "GeosCli/IntersectsCommand.hpp"
 #include "GeosCli/IsEmptyCommand.hpp"
+#include "GeosCli/IsRectCommand.hpp"
 #include "GeosCli/IsValidCommand.hpp"
 #include "GeosCli/IsWithinDistanceCommand.hpp"
 #include "GeosCli/LengthCommand.hpp"

@@ -19,6 +19,7 @@ ADD_EXECUTABLE(tests
     IntersectionCommandTest.cpp
     IntersectsCommandTest.cpp
     IsEmptyCommandTest.cpp
+    IsRectCommandTest.cpp
     IsValidCommandTest.cpp
     IsWithinDistanceCommandTest.cpp
     LengthCommandTest.cpp
