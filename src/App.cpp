@@ -50,6 +50,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&isEmptyCommand);
     IsRectCommand isRectCommand(&app);
     commands.add(&isRectCommand);
+    IsSimpleCommand isSimpleCommand(&app);
+    commands.add(&isSimpleCommand);
     IsValidCommand isValidCommand(&app);
     commands.add(&isValidCommand);
     IsWithinDistanceCommand isWithinDistanceCommand(&app);

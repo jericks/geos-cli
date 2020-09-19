@@ -31,6 +31,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/IntersectsCommand.cpp
     src/IsEmptyCommand.cpp
     src/IsRectCommand.cpp
+    src/IsSimpleCommand.cpp
     src/IsValidCommand.cpp
     src/IsWithinDistanceCommand.cpp
     src/LengthCommand.cpp
