@@ -37,6 +37,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/LengthCommand.cpp
     src/ListCommand.cpp
     src/TouchesCommand.cpp
+    src/UnionCommand.cpp
     src/VoronoiDiagramCommand.cpp
     src/WithinCommand.cpp
 )

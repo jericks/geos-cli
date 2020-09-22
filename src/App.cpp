@@ -60,6 +60,10 @@ int main(int argc, char const *argv[]) {
     commands.add(&lengthCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
+    TouchesCommand touchesCommand(&app);
+    commands.add(&touchesCommand);
+    UnionCommand unionCommand(&app);
+    commands.add(&unionCommand);
     VoronoiDiagramCommand voronoiDiagramCommand(&app);
     commands.add(&voronoiDiagramCommand);
     WithinCommand withinCommand(&app);
