@@ -60,6 +60,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&lengthCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
+    SymDifferenceCommand symDifferenceCommand(&app);
+    commands.add(&symDifferenceCommand);
     TouchesCommand touchesCommand(&app);
     commands.add(&touchesCommand);
     UnionCommand unionCommand(&app);

@@ -29,6 +29,7 @@
 #include "GeosCli/IsWithinDistanceCommand.hpp"
 #include "GeosCli/LengthCommand.hpp"
 #include "GeosCli/ListCommand.hpp"
+#include "GeosCli/SymDifferenceCommand.hpp"
 #include "GeosCli/TouchesCommand.hpp"
 #include "GeosCli/UnionCommand.hpp"
 #include "GeosCli/VoronoiDiagramCommand.hpp"
