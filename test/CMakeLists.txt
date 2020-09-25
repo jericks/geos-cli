@@ -5,6 +5,7 @@ ADD_EXECUTABLE(tests
     CentroidCommandTest.cpp
     ContainsCommandTest.cpp
     ConvexHullCommandTest.cpp
+    CoordinatesCommandTest.cpp
     CountCommandTest.cpp
     CountPointsCommandTest.cpp
     CoveredByCommandTest.cpp

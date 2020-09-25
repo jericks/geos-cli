@@ -8,21 +8,21 @@
 #include <geos/io/WKTWriter.h>
 #include <geos/geom/Geometry.h>
 
-class ConvexHullOptions {
+class CoordinatesOptions {
     public:
         std::string geometry;
 };
 
-class ConvexHullCommand : public Command {
+class CoordinatesCommand : public Command {
 
     public:
 
-        ConvexHullCommand(CLI::App* app);
+        CoordinatesCommand(CLI::App* app);
 
         void execute(std::istream& istream, std::ostream& ostream);
 
     private:
 
-        ConvexHullOptions options;
+        CoordinatesOptions options;
 
 };

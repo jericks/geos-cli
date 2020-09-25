@@ -20,6 +20,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&containsCommand);
     ConvexHullCommand convexHullCommand(&app);
     commands.add(&convexHullCommand);
+    CoordinatesCommand coordinatesCommand(&app);
+    commands.add(&coordinatesCommand);
     CountCommand countCommand(&app);
     commands.add(&countCommand);
     CountPointsCommand countPointsCommand(&app);

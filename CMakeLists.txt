@@ -16,6 +16,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/CentroidCommand.cpp 
     src/ContainsCommand.cpp
     src/ConvexHullCommand.cpp
+    src/CoordinatesCommand.cpp
     src/CountCommand.cpp
     src/CountPointsCommand.cpp
     src/CoveredByCommand.cpp

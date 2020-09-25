@@ -9,6 +9,7 @@
 #include "GeosCli/CentroidCommand.hpp"
 #include "GeosCli/ContainsCommand.hpp"
 #include "GeosCli/ConvexHullCommand.hpp"
+#include "GeosCli/CoordinatesCommand.hpp"
 #include "GeosCli/CountCommand.hpp"
 #include "GeosCli/CountPointsCommand.hpp"
 #include "GeosCli/CoveredByCommand.hpp"
