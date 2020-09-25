@@ -24,3 +24,49 @@ cmake -g "Unix Makefiles" .
 cmake --build .
 ctest --verbose
 ```
+
+Use
+---
+
+List all commands
+
+```bash
+% geos-cli list
+area
+boundary
+buffer
+centroid
+contains
+convexhull
+coordinates
+count
+countpoints
+```
+
+Get help for a command
+
+```bash
+ % geos-cli buffer --help
+Buffer a geometry
+Usage: geos-cli buffer [OPTIONS]
+
+Options:
+  -h,--help                   Print this help message and exit
+  -g TEXT                     Geometry
+  -d FLOAT REQUIRED           Distance
+```
+
+Use a command
+
+```bash
+% geos-cli get -g "MULTIPOINT (1 1, 5 5, 10 10)" -i 1
+POINT (1.0000000000000000 1.0000000000000000)
+```
+
+Combine commands
+
+```bash
+% geos-cli buffer -g "POINT (1 1)" -d 10 | geos-cli centroid
+POINT (0.9999999999999994 0.9999999999999997)
+```
+
