@@ -20,6 +20,7 @@
 #include "GeosCli/DisjointCommand.hpp"
 #include "GeosCli/DistanceCommand.hpp"
 #include "GeosCli/EnvelopeCommand.hpp"
+#include "GeosCli/GetCommand.hpp"
 #include "GeosCli/InteriorPointCommand.hpp"
 #include "GeosCli/IntersectionCommand.hpp"
 #include "GeosCli/IntersectsCommand.hpp"

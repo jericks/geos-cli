@@ -27,6 +27,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/DisjointCommand.cpp
     src/DistanceCommand.cpp
     src/EnvelopeCommand.cpp
+    src/GetCommand.cpp
     src/InteriorPointCommand.cpp
     src/IntersectionCommand.cpp
     src/IntersectsCommand.cpp

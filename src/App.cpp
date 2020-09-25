@@ -42,6 +42,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&distanceCommand);
     EnvelopeCommand envelopeCommand(&app);
     commands.add(&envelopeCommand);
+    GetCommand getCommand(&app);
+    commands.add(&getCommand);
     InteriorPointCommand interiorPointCommand(&app);
     commands.add(&interiorPointCommand);
     IntersectionCommand intersectionCommand(&app);

@@ -16,6 +16,7 @@ ADD_EXECUTABLE(tests
     DisjointCommandTest.cpp
     DistanceCommandTest.cpp
     EnvelopeCommandTest.cpp
+    GetCommandTest.cpp
     InteriorPointCommandTest.cpp
     IntersectionCommandTest.cpp
     IntersectsCommandTest.cpp
