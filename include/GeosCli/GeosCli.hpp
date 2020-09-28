@@ -33,6 +33,7 @@
 #include "GeosCli/ListCommand.hpp"
 #include "GeosCli/SymDifferenceCommand.hpp"
 #include "GeosCli/TouchesCommand.hpp"
+#include "GeosCli/TypeCommand.hpp"
 #include "GeosCli/UnionCommand.hpp"
 #include "GeosCli/VoronoiDiagramCommand.hpp"
 #include "GeosCli/WithinCommand.hpp"

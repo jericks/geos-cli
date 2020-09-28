@@ -29,6 +29,7 @@ ADD_EXECUTABLE(tests
     ListCommandTest.cpp
     SymDifferenceCommandTest.cpp
     TouchesCommandTest.cpp
+    TypeCommandTest.cpp
     UnionCommandTest.cpp
     VoronoiDiagramCommandTest.cpp
     WithinCommandTest.cpp

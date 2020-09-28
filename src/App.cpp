@@ -68,6 +68,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&symDifferenceCommand);
     TouchesCommand touchesCommand(&app);
     commands.add(&touchesCommand);
+    TypeCommand typeCommand(&app);
+    commands.add(&typeCommand);
     UnionCommand unionCommand(&app);
     commands.add(&unionCommand);
     VoronoiDiagramCommand voronoiDiagramCommand(&app);
