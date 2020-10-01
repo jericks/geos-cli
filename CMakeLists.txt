@@ -1,14 +1,13 @@
-cmake_minimum_required(VERSION 2.8.12)
-project(geos-cli)
+cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
+project(geos-cli VERSION 0.0.1 LANGUAGES CXX)
 
-add_definitions("-std=c++11")
-
+# Conan
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-include_directories("${PROJECT_SOURCE_DIR}/include")
-
-add_library(geos-cmds STATIC src/Commands.cpp 
+# Library
+add_library(geos-cmds STATIC 
+    src/Commands.cpp 
     src/Command.cpp 
     src/AreaCommand.cpp
     src/BoundaryCommand.cpp 
@@ -38,6 +37,7 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/IsWithinDistanceCommand.cpp
     src/LengthCommand.cpp
     src/ListCommand.cpp
+    src/OverlapsCommand.cpp
     src/SymDifferenceCommand.cpp
     src/TouchesCommand.cpp
     src/TypeCommand.cpp
@@ -45,9 +45,15 @@ add_library(geos-cmds STATIC src/Commands.cpp
     src/VoronoiDiagramCommand.cpp
     src/WithinCommand.cpp
 )
+add_library(GeosCli::geos-cmds ALIAS geos-cmds)
+target_include_directories(geos-cmds PUBLIC "${PROJECT_SOURCE_DIR}/include")
+target_compile_features(geos-cmds PUBLIC cxx_std_11)
+target_link_libraries(geos-cmds PRIVATE ${CONAN_LIBS_GEOS})
 
+# Application
 add_executable(geos-cli src/App.cpp)
-target_link_libraries(geos-cli geos-cmds ${CONAN_LIBS_GEOS})
+target_link_libraries(geos-cli PRIVATE geos-cmds ${CONAN_LIBS_GEOS})
 
+# Tests
 enable_testing()
 add_subdirectory(test)

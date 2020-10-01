@@ -27,6 +27,7 @@ ADD_EXECUTABLE(tests
     IsWithinDistanceCommandTest.cpp
     LengthCommandTest.cpp
     ListCommandTest.cpp
+    OverlapsCommandTest.cpp
     SymDifferenceCommandTest.cpp
     TouchesCommandTest.cpp
     TypeCommandTest.cpp
