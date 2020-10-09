@@ -66,6 +66,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&listCommand);
     OverlapsCommand overlapsCommand(&app);
     commands.add(&overlapsCommand);
+    RelateCommand relateCommand(&app);
+    commands.add(&relateCommand);
     SymDifferenceCommand symDifferenceCommand(&app);
     commands.add(&symDifferenceCommand);
     TouchesCommand touchesCommand(&app);

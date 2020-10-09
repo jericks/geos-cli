@@ -32,6 +32,7 @@
 #include "GeosCli/LengthCommand.hpp"
 #include "GeosCli/ListCommand.hpp"
 #include "GeosCli/OverlapsCommand.hpp"
+#include "GeosCli/RelateCommand.hpp"
 #include "GeosCli/SymDifferenceCommand.hpp"
 #include "GeosCli/TouchesCommand.hpp"
 #include "GeosCli/TypeCommand.hpp"

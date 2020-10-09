@@ -28,6 +28,7 @@ ADD_EXECUTABLE(tests
     LengthCommandTest.cpp
     ListCommandTest.cpp
     OverlapsCommandTest.cpp
+    RelateCommandTest.cpp
     SymDifferenceCommandTest.cpp
     TouchesCommandTest.cpp
     TypeCommandTest.cpp

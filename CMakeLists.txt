@@ -38,6 +38,7 @@ add_library(geos-cmds STATIC
     src/LengthCommand.cpp
     src/ListCommand.cpp
     src/OverlapsCommand.cpp
+    src/RelateCommand.cpp
     src/SymDifferenceCommand.cpp
     src/TouchesCommand.cpp
     src/TypeCommand.cpp
