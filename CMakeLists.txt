@@ -23,6 +23,7 @@ add_library(geos-cmds STATIC
     src/CrossesCommand.cpp
     src/DelaunayTriangulationCommand.cpp
     src/DifferenceCommand.cpp
+    src/DimensionCommand.cpp
     src/DisjointCommand.cpp
     src/DistanceCommand.cpp
     src/EnvelopeCommand.cpp

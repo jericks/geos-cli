@@ -17,6 +17,7 @@
 #include "GeosCli/CrossesCommand.hpp"
 #include "GeosCli/DelaunayTriangulationCommand.hpp"
 #include "GeosCli/DifferenceCommand.hpp"
+#include "GeosCli/DimensionCommand.hpp"
 #include "GeosCli/DisjointCommand.hpp"
 #include "GeosCli/DistanceCommand.hpp"
 #include "GeosCli/EnvelopeCommand.hpp"

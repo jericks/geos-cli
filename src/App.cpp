@@ -36,6 +36,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&delaunayTriangulationCommand);
     DifferenceCommand differenceCommand(&app);
     commands.add(&differenceCommand);
+    DimensionCommand dimensionCommand(&app);
+    commands.add(&dimensionCommand);
     DisjointCommand disjointCommand(&app);
     commands.add(&disjointCommand);
     DistanceCommand distanceCommand(&app);
