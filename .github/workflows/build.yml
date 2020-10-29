@@ -29,10 +29,8 @@ jobs:
       shell: bash
       working-directory: ${{runner.workspace}}/build
       run: |
-        echo `pwd`
-        ls -al
         source ~/.profile
-        conan install ..
+        conan install $GITHUB_WORKSPACE
     - name: Configure CMake
       shell: bash
       working-directory: ${{runner.workspace}}/build
