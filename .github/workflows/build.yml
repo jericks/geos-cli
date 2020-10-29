@@ -27,13 +27,12 @@ jobs:
         source ~/.profile
     - name: Install conan libraries
       shell: bash
-      working-directory: ${{runner.workspace}}
+      working-directory: ${{runner.workspace}}/build
       run: |
+        echo `pwd`
+        ls -al
         source ~/.profile
-        conan profile new default --detect
-        conan profile update settings.compiler.libcxx=libstdc++11 default
-        cd build
-        conan install ../    
+        conan install ..
     - name: Configure CMake
       shell: bash
       working-directory: ${{runner.workspace}}/build
