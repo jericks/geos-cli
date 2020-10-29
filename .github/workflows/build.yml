@@ -30,13 +30,13 @@ jobs:
       working-directory: ${{runner.workspace}}/build
       run: |
         source ~/.profile
+        conan profile update settings.compiler.libcxx=libstdc++11 default
         conan install $GITHUB_WORKSPACE
     - name: Configure CMake
       shell: bash
       working-directory: ${{runner.workspace}}/build
       run: |
         source ~/.profile
-        conan profile update settings.compiler.libcxx=libstdc++11 default
         cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=$BUILD_TYPE
     - name: Build
       working-directory: ${{runner.workspace}}/build
