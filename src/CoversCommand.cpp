@@ -1,7 +1,7 @@
 #include "GeosCli/CoversCommand.hpp"
 
-CoversCommand::CoversCommand(CLI::App* app): Command ("covers") {
-    CLI::App* cmd = app->add_subcommand("covers", "Determine if one geometry is covers another");
+CoversCommand::CoversCommand(CLI::App* app): Command ("covers", "Determine if one geometry covers another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

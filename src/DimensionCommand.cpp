@@ -1,7 +1,7 @@
 #include "GeosCli/DimensionCommand.hpp"
 
-DimensionCommand::DimensionCommand(CLI::App* app): Command ("dimension") {
-    CLI::App* cmd = app->add_subcommand("dimension", "Get the dimension of the geometry");
+DimensionCommand::DimensionCommand(CLI::App* app): Command ("dimension", "Get the dimension of the geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

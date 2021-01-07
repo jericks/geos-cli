@@ -1,7 +1,7 @@
 #include "GeosCli/OverlapsCommand.hpp"
 
-OverlapsCommand::OverlapsCommand(CLI::App* app): Command ("overlaps") {
-    CLI::App* cmd = app->add_subcommand("overlaps", "Determine if one geometry overlaps another");
+OverlapsCommand::OverlapsCommand(CLI::App* app): Command ("overlaps", "Determine if one geometry overlaps another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

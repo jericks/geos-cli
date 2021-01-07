@@ -1,7 +1,7 @@
 #include "GeosCli/TypeCommand.hpp"
 
-TypeCommand::TypeCommand(CLI::App* app): Command ("type") {
-    CLI::App* cmd = app->add_subcommand("type", "Get the geometry type a geometry");
+TypeCommand::TypeCommand(CLI::App* app): Command ("type", "Get the geometry type a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

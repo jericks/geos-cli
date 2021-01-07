@@ -1,7 +1,7 @@
 #include "GeosCli/BoundaryCommand.hpp"
 
-BoundaryCommand::BoundaryCommand(CLI::App* app): Command ("boundary") {
-    CLI::App* cmd = app->add_subcommand("boundary", "Get the bounds of a geometry");
+BoundaryCommand::BoundaryCommand(CLI::App* app): Command ("boundary", "Get the bounds of a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Input Geometry");
 }
 

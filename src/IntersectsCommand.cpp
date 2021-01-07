@@ -1,7 +1,7 @@
 #include "GeosCli/IntersectsCommand.hpp"
 
-IntersectsCommand::IntersectsCommand(CLI::App* app): Command ("intersects") {
-    CLI::App* cmd = app->add_subcommand("intersects", "Determine if one geometry is intersects another");
+IntersectsCommand::IntersectsCommand(CLI::App* app): Command ("intersects", "Determine if one geometry intersects another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

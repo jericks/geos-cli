@@ -1,7 +1,7 @@
 #include "GeosCli/DelaunayTriangulationCommand.hpp"
 
-DelaunayTriangulationCommand::DelaunayTriangulationCommand(CLI::App* app): Command ("delaunaytriangulation") {
-    CLI::App* cmd = app->add_subcommand("delaunaytriangulation", "Create delaunay triangles");
+DelaunayTriangulationCommand::DelaunayTriangulationCommand(CLI::App* app): Command ("delaunaytriangulation", "Create delaunay triangles") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Input Geometry");
 }
 

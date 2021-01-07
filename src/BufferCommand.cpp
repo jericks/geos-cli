@@ -1,7 +1,7 @@
 #include "GeosCli/BufferCommand.hpp"
 
-BufferCommand::BufferCommand(CLI::App* app): Command ("buffer") {
-    CLI::App* cmd = app->add_subcommand("buffer", "Buffer a geometry");
+BufferCommand::BufferCommand(CLI::App* app): Command ("buffer", "Buffer a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-d", options.distance, "Distance")->required();
 }

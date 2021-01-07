@@ -1,7 +1,7 @@
 #include "GeosCli/VoronoiDiagramCommand.hpp"
 
-VoronoiDiagramCommand::VoronoiDiagramCommand(CLI::App* app): Command ("voronoidiagram") {
-    CLI::App* cmd = app->add_subcommand("voronoidiagram", "Create a voronoi diagram");
+VoronoiDiagramCommand::VoronoiDiagramCommand(CLI::App* app): Command ("voronoidiagram", "Create a voronoi diagram") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Input Geometry");
 }
 

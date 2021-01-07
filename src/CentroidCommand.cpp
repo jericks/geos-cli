@@ -1,7 +1,7 @@
 #include "GeosCli/CentroidCommand.hpp"
 
-CentroidCommand::CentroidCommand(CLI::App* app): Command ("centroid") {
-    CLI::App* cmd = app->add_subcommand("centroid", "Get the centroid from a geometry");
+CentroidCommand::CentroidCommand(CLI::App* app): Command ("centroid", "Get the centroid from a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

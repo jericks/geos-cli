@@ -1,7 +1,7 @@
 #include "GeosCli/ConvexHullCommand.hpp"
 
-ConvexHullCommand::ConvexHullCommand(CLI::App* app): Command ("convexhull") {
-    CLI::App* cmd = app->add_subcommand("convexhull", "Get the convexhull of a geometry");
+ConvexHullCommand::ConvexHullCommand(CLI::App* app): Command ("convexhull", "Get the convexhull of a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

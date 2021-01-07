@@ -1,7 +1,7 @@
 #include "GeosCli/GetCommand.hpp"
 
-GetCommand::GetCommand(CLI::App* app): Command ("get") {
-    CLI::App* cmd = app->add_subcommand("get", "Get a sub geometry from a geometry collection by index");
+GetCommand::GetCommand(CLI::App* app): Command ("get", "Get a sub geometry from a geometry collection by index") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Input Geometry");
     cmd->add_option("-i", options.index, "The index number of the Geometry")->required();
 }

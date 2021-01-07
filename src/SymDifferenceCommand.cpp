@@ -1,7 +1,7 @@
 #include "GeosCli/SymDifferenceCommand.hpp"
 
-SymDifferenceCommand::SymDifferenceCommand(CLI::App* app): Command ("symdifference") {
-    CLI::App* cmd = app->add_subcommand("symdifference", "Calculate the symdifference between two geometries");
+SymDifferenceCommand::SymDifferenceCommand(CLI::App* app): Command ("symdifference", "Calculate the symdifference between two geometries") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

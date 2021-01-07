@@ -1,7 +1,7 @@
 #include "GeosCli/DifferenceCommand.hpp"
 
-DifferenceCommand::DifferenceCommand(CLI::App* app): Command ("difference") {
-    CLI::App* cmd = app->add_subcommand("difference", "Calculate the difference between two geometries");
+DifferenceCommand::DifferenceCommand(CLI::App* app): Command ("difference", "Calculate the difference between two geometries") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

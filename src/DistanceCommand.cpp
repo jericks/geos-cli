@@ -1,7 +1,7 @@
 #include "GeosCli/DistanceCommand.hpp"
 
-DistanceCommand::DistanceCommand(CLI::App* app): Command ("distance") {
-    CLI::App* cmd = app->add_subcommand("distance", "Determine distance between two geometries");
+DistanceCommand::DistanceCommand(CLI::App* app): Command ("distance", "Determine the distance between two geometries") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

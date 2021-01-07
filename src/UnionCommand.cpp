@@ -1,7 +1,7 @@
 #include "GeosCli/UnionCommand.hpp"
 
-UnionCommand::UnionCommand(CLI::App* app): Command ("union") {
-    CLI::App* cmd = app->add_subcommand("union", "Calculate the union between two geometries");
+UnionCommand::UnionCommand(CLI::App* app): Command ("union", "Calculate the union between two geometries") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

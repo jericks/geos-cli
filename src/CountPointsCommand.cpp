@@ -1,7 +1,7 @@
 #include "GeosCli/CountPointsCommand.hpp"
 
-CountPointsCommand::CountPointsCommand(CLI::App* app): Command ("countpoints") {
-    CLI::App* cmd = app->add_subcommand("countpoints", "Get the number of points");
+CountPointsCommand::CountPointsCommand(CLI::App* app): Command ("countpoints", "Get the number of points") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

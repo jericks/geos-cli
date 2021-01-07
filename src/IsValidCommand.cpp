@@ -1,7 +1,7 @@
 #include "GeosCli/IsValidCommand.hpp"
 
-IsValidCommand::IsValidCommand(CLI::App* app): Command ("isvalid") {
-    CLI::App* cmd = app->add_subcommand("isvalid", "Determine if a geometry is valid");
+IsValidCommand::IsValidCommand(CLI::App* app): Command ("isvalid", "Determine if a geometry is valid") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

@@ -1,7 +1,7 @@
 #include "GeosCli/IsWithinDistanceCommand.hpp"
 
-IsWithinDistanceCommand::IsWithinDistanceCommand(CLI::App* app): Command ("iswithindistance") {
-    CLI::App* cmd = app->add_subcommand("iswithindistance", "Determine if two geometries are within the given distance");
+IsWithinDistanceCommand::IsWithinDistanceCommand(CLI::App* app): Command ("iswithindistance", "Determine if a geometry is within the given distance of another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
     cmd->add_option("-d", options.distance, "Distance")->required();

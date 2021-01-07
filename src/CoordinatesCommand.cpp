@@ -1,7 +1,7 @@
 #include "GeosCli/CoordinatesCommand.hpp"
 
-CoordinatesCommand::CoordinatesCommand(CLI::App* app): Command ("coordinates") {
-    CLI::App* cmd = app->add_subcommand("coordinates", "Get the coordinates of a geometry");
+CoordinatesCommand::CoordinatesCommand(CLI::App* app): Command ("coordinates", "Get the coordinates of a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

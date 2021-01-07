@@ -1,7 +1,7 @@
 #include "GeosCli/ContainsCommand.hpp"
 
-ContainsCommand::ContainsCommand(CLI::App* app): Command ("contains") {
-    CLI::App* cmd = app->add_subcommand("contains", "Determine if one geometry contains another");
+ContainsCommand::ContainsCommand(CLI::App* app): Command ("contains", "Determine if one geometry contains another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

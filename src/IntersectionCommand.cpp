@@ -1,7 +1,7 @@
 #include "GeosCli/IntersectionCommand.hpp"
 
-IntersectionCommand::IntersectionCommand(CLI::App* app): Command ("intersection") {
-    CLI::App* cmd = app->add_subcommand("intersection", "Calculate the intersection between two geometries");
+IntersectionCommand::IntersectionCommand(CLI::App* app): Command ("intersection", "Calculate the intersection between two geometries") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

@@ -1,7 +1,7 @@
 #include "GeosCli/AreaCommand.hpp"
 
-AreaCommand::AreaCommand(CLI::App* app): Command ("area") {
-    CLI::App* cmd = app->add_subcommand("area", "Get the area a geometry");
+AreaCommand::AreaCommand(CLI::App* app): Command ("area", "Get the area a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

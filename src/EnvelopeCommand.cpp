@@ -1,7 +1,7 @@
 #include "GeosCli/EnvelopeCommand.hpp"
 
-EnvelopeCommand::EnvelopeCommand(CLI::App* app): Command ("envelope") {
-    CLI::App* cmd = app->add_subcommand("envelope", "Get the envelope from a geometry");
+EnvelopeCommand::EnvelopeCommand(CLI::App* app): Command ("envelope", "Get the envelope from a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Input Geometry");
 }
 

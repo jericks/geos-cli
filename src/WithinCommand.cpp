@@ -1,7 +1,7 @@
 #include "GeosCli/WithinCommand.hpp"
 
-WithinCommand::WithinCommand(CLI::App* app): Command ("within") {
-    CLI::App* cmd = app->add_subcommand("within", "Determine if one geometry is within another");
+WithinCommand::WithinCommand(CLI::App* app): Command ("within", "Determine if one geometry is within another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

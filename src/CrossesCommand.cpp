@@ -1,7 +1,7 @@
 #include "GeosCli/CrossesCommand.hpp"
 
-CrossesCommand::CrossesCommand(CLI::App* app): Command ("crosses") {
-    CLI::App* cmd = app->add_subcommand("crosses", "Determine if one geometry is crosses another");
+CrossesCommand::CrossesCommand(CLI::App* app): Command ("crosses", "Determine if one geometry is crosses another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

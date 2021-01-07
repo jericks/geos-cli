@@ -1,7 +1,7 @@
 #include "GeosCli/IsRectCommand.hpp"
 
-IsRectCommand::IsRectCommand(CLI::App* app): Command ("isrect") {
-    CLI::App* cmd = app->add_subcommand("isrect", "Determine if a geometry is a rectangle");
+IsRectCommand::IsRectCommand(CLI::App* app): Command ("isrect", "Determine if a geometry is a rectangle") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

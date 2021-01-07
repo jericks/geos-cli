@@ -1,7 +1,7 @@
 #include "GeosCli/CoveredByCommand.hpp"
 
-CoveredByCommand::CoveredByCommand(CLI::App* app): Command ("coveredby") {
-    CLI::App* cmd = app->add_subcommand("coveredby", "Determine if one geometry is coveredby another");
+CoveredByCommand::CoveredByCommand(CLI::App* app): Command ("coveredby", "Determine if one geometry is coveredby another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

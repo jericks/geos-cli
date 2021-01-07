@@ -1,7 +1,7 @@
 #include "GeosCli/ListCommand.hpp"
 
-ListCommand::ListCommand(CLI::App* app, Commands* cmds): Command ("list") {
-    CLI::App* cmd = app->add_subcommand("list", "List all commands");
+ListCommand::ListCommand(CLI::App* app, Commands* cmds): Command ("list", "List all commands") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     commands = cmds;
 }
 

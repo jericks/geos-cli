@@ -1,7 +1,7 @@
 #include "GeosCli/RelateCommand.hpp"
 
-RelateCommand::RelateCommand(CLI::App* app): Command ("relate") {
-    CLI::App* cmd = app->add_subcommand("relate", "Determine if the input Geometry and the other Geometry are related according to the DE-9IM intersection matrix or calculate the DE-9IM.");
+RelateCommand::RelateCommand(CLI::App* app): Command ("relate", "Determine if the input Geometry and the other Geometry are related according to the DE-9IM intersection matrix or calculate the DE-9IM.") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
     cmd->add_option("-m", options.intersectionMatrix, "DE-9IM intesection matrix");

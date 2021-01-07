@@ -1,7 +1,7 @@
 #include "GeosCli/IsSimpleCommand.hpp"
 
-IsSimpleCommand::IsSimpleCommand(CLI::App* app): Command ("issimple") {
-    CLI::App* cmd = app->add_subcommand("issimple", "Determine if a geometry is simple");
+IsSimpleCommand::IsSimpleCommand(CLI::App* app): Command ("issimple", "Determine if a geometry is simple") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

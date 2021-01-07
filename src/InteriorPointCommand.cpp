@@ -1,7 +1,7 @@
 #include "GeosCli/InteriorPointCommand.hpp"
 
-InteriorPointCommand::InteriorPointCommand(CLI::App* app): Command ("interiorpoint") {
-    CLI::App* cmd = app->add_subcommand("interiorpoint", "Get the interior point from a geometry");
+InteriorPointCommand::InteriorPointCommand(CLI::App* app): Command ("interiorpoint", "Get the interior point from a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

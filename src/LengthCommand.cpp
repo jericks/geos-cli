@@ -1,7 +1,7 @@
 #include "GeosCli/LengthCommand.hpp"
 
-LengthCommand::LengthCommand(CLI::App* app): Command ("length") {
-    CLI::App* cmd = app->add_subcommand("length", "Get the length a geometry");
+LengthCommand::LengthCommand(CLI::App* app): Command ("length", "Get the length of a geometry") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

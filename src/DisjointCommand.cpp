@@ -1,7 +1,7 @@
 #include "GeosCli/DisjointCommand.hpp"
 
-DisjointCommand::DisjointCommand(CLI::App* app): Command ("disjoint") {
-    CLI::App* cmd = app->add_subcommand("disjoint", "Determine whether a geometry is disjoint from another");
+DisjointCommand::DisjointCommand(CLI::App* app): Command ("disjoint", "Determine whether a geometry is disjoint from another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

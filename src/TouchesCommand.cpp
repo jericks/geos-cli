@@ -1,7 +1,7 @@
 #include "GeosCli/TouchesCommand.hpp"
 
-TouchesCommand::TouchesCommand(CLI::App* app): Command ("touches") {
-    CLI::App* cmd = app->add_subcommand("touches", "Determine if one geometry is touches another");
+TouchesCommand::TouchesCommand(CLI::App* app): Command ("touches", "Determine if one geometry is touches another") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
     cmd->add_option("-o", options.otherGeometry, "Other Geometry")->required();
 }

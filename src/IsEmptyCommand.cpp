@@ -1,7 +1,7 @@
 #include "GeosCli/IsEmptyCommand.hpp"
 
-IsEmptyCommand::IsEmptyCommand(CLI::App* app): Command ("isempty") {
-    CLI::App* cmd = app->add_subcommand("isempty", "Determine if a geometry is empty");
+IsEmptyCommand::IsEmptyCommand(CLI::App* app): Command ("isempty", "Determine if a geometry is empty") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 

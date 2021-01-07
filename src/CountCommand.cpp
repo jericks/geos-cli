@@ -1,7 +1,7 @@
 #include "GeosCli/CountCommand.hpp"
 
-CountCommand::CountCommand(CLI::App* app): Command ("count") {
-    CLI::App* cmd = app->add_subcommand("count", "Get the number of geometries");
+CountCommand::CountCommand(CLI::App* app): Command ("count", "Get the number of geometries") {
+    CLI::App* cmd = app->add_subcommand(this->getName(), this->getDescription());
     cmd->add_option("-g", options.geometry, "Geometry");
 }
 
