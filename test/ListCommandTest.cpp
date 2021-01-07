@@ -26,6 +26,6 @@ TEST(geos_tests, list_test) {
 
   std::string result = outstream.str();
   ASSERT_NE(std::string::npos, result.find("list"));
-  ASSERT_NE(std::string::npos, outstream.str().find("buffer"));
-  ASSERT_EQ(std::string::npos, outstream.str().find("notacommand"));
+  ASSERT_NE(std::string::npos, result.find("buffer"));
+  ASSERT_EQ(std::string::npos, result.find("notacommand"));
 }
