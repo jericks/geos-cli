@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CLI11.hpp"
+#include "CLI/CLI.hpp"
 #include "GeosCli/Command.hpp"
 #include "GeosCli/Commands.hpp"
 

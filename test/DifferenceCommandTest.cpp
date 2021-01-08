@@ -1,7 +1,7 @@
 #include <sstream>
 #include <iostream>
 #include "GeosCli/GeosCli.hpp"
-#include "CLI11.hpp"
+#include "CLI/CLI.hpp"
 #include "gtest/gtest.h"
 
 TEST(geos_tests, difference_test) {

@@ -1,6 +1,6 @@
 #include <iostream>
 #include "GeosCli/GeosCli.hpp"
-#include "CLI11.hpp"
+#include "CLI/CLI.hpp"
 
 int main(int argc, char const *argv[]) {
 

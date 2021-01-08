@@ -1,5 +1,6 @@
 [requires]
 geos/3.8.1
+cli11/1.9.1
 gtest/1.10.0
 
 [generators]
