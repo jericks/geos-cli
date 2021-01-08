@@ -5,6 +5,8 @@
 #include "GeosCli/Commands.hpp"
 
 class ListOptions {
+    public:
+        bool showDescription = false;
 };
 
 class ListCommand : public Command {
