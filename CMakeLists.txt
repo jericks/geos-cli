@@ -38,6 +38,7 @@ add_library(geos-cmds STATIC
     src/IsWithinDistanceCommand.cpp
     src/LengthCommand.cpp
     src/ListCommand.cpp
+    src/MakeValidCommand.cpp
     src/OverlapsCommand.cpp
     src/RelateCommand.cpp
     src/SymDifferenceCommand.cpp

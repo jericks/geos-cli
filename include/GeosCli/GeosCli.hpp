@@ -32,6 +32,7 @@
 #include "GeosCli/IsWithinDistanceCommand.hpp"
 #include "GeosCli/LengthCommand.hpp"
 #include "GeosCli/ListCommand.hpp"
+#include "GeosCli/MakeValidCommand.hpp"
 #include "GeosCli/OverlapsCommand.hpp"
 #include "GeosCli/RelateCommand.hpp"
 #include "GeosCli/SymDifferenceCommand.hpp"

@@ -66,6 +66,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&lengthCommand);
     ListCommand listCommand(&app, &commands);
     commands.add(&listCommand);
+    MakeValidCommand makeValidCommand(&app);
+    commands.add(&makeValidCommand);
     OverlapsCommand overlapsCommand(&app);
     commands.add(&overlapsCommand);
     RelateCommand relateCommand(&app);
