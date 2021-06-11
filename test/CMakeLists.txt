@@ -40,9 +40,9 @@ ADD_EXECUTABLE(tests
 )
 target_link_libraries(tests 
     geos-cmds
-    ${CONAN_LIBS_GEOS} 
-    ${CONAN_LIBS_GTEST} 
-    ${CONAN_LIBS_GTEST_MAIN}
+    GEOS::GEOS
+    CLI11::CLI11
+    GTest::GTest
 )
 
 ADD_TEST(NAME "GeosCliTests" COMMAND "tests")

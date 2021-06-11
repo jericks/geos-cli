@@ -1,6 +1,8 @@
 #pragma once
 
-#define USE_UNSTABLE_GEOS_CPP_API
+#ifndef USE_UNSTABLE_GEOS_CPP_API
+    #define USE_UNSTABLE_GEOS_CPP_API
+#endif
 
 #include "CLI/CLI.hpp"
 #include "GeosCli/Command.hpp"

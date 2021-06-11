@@ -2,8 +2,10 @@ cmake_minimum_required(VERSION 3.12.4 FATAL_ERROR)
 project(geos-cli VERSION 0.0.1 LANGUAGES CXX)
 
 # Conan
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
+find_package(geos REQUIRED)
+find_package(gtest REQUIRED)
+find_package(cli11 REQUIRED)
 
 # Library
 add_library(geos-cmds STATIC 
@@ -51,11 +53,11 @@ add_library(geos-cmds STATIC
 add_library(GeosCli::geos-cmds ALIAS geos-cmds)
 target_include_directories(geos-cmds PUBLIC "${PROJECT_SOURCE_DIR}/include")
 target_compile_features(geos-cmds PUBLIC cxx_std_11)
-target_link_libraries(geos-cmds PRIVATE ${CONAN_LIBS_GEOS})
+target_link_libraries(geos-cmds PRIVATE GEOS::GEOS CLI11::CLI11)
 
 # Application
 add_executable(geos-cli src/App.cpp)
-target_link_libraries(geos-cli PRIVATE geos-cmds ${CONAN_LIBS_GEOS})
+target_link_libraries(geos-cli PRIVATE geos-cmds GEOS::GEOS CLI11::CLI11)
 
 # Tests
 enable_testing()
