@@ -3,9 +3,9 @@ project(geos-cli VERSION 0.0.1 LANGUAGES CXX)
 
 # Conan
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR})
-find_package(geos REQUIRED)
-find_package(gtest REQUIRED)
-find_package(cli11 REQUIRED)
+find_package(GEOS REQUIRED)
+find_package(GTest REQUIRED)
+find_package(CLI11 REQUIRED)
 
 # Library
 add_library(geos-cmds STATIC 
