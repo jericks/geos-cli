@@ -6,6 +6,7 @@
 #include "GeosCli/Command.hpp"
 #include <geos/io/WKTReader.h>
 #include <geos/geom/Geometry.h>
+#include <geos/geom/IntersectionMatrix.h>
 
 class RelateOptions {
     public:

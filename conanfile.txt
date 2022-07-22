@@ -1,6 +1,6 @@
 [requires]
-geos/3.10.1
-cli11/2.1.1
+geos/3.11.0
+cli11/2.2.0
 gtest/cci.20210126
 
 [generators]
