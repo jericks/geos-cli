@@ -68,6 +68,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&listCommand);
     MakeValidCommand makeValidCommand(&app);
     commands.add(&makeValidCommand);
+    OffsetCurveCommand offsetCurveCommand(&app);
+    commands.add(&offsetCurveCommand);
     OverlapsCommand overlapsCommand(&app);
     commands.add(&overlapsCommand);
     RelateCommand relateCommand(&app);

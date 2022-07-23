@@ -41,6 +41,7 @@ add_library(geos-cmds STATIC
     src/LengthCommand.cpp
     src/ListCommand.cpp
     src/MakeValidCommand.cpp
+    src/OffsetCurveCommand.cpp
     src/OverlapsCommand.cpp
     src/RelateCommand.cpp
     src/SymDifferenceCommand.cpp

@@ -29,6 +29,7 @@ ADD_EXECUTABLE(tests
     LengthCommandTest.cpp
     ListCommandTest.cpp
     MakeValidCommandTest.cpp
+    OffsetCurveCommandTest.cpp
     OverlapsCommandTest.cpp
     RelateCommandTest.cpp
     SymDifferenceCommandTest.cpp
