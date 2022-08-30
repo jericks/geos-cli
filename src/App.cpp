@@ -18,6 +18,8 @@ int main(int argc, char const *argv[]) {
     commands.add(&centroidCommand);
     ContainsCommand containsCommand(&app);
     commands.add(&containsCommand);
+    ConcaveHullCommand concaveHullCommand(&app);
+    commands.add(&concaveHullCommand);
     ConvexHullCommand convexHullCommand(&app);
     commands.add(&convexHullCommand);
     CoordinatesCommand coordinatesCommand(&app);

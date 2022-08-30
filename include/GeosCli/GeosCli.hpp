@@ -8,6 +8,7 @@
 #include "GeosCli/BufferCommand.hpp"
 #include "GeosCli/CentroidCommand.hpp"
 #include "GeosCli/ContainsCommand.hpp"
+#include "GeosCli/ConcaveHullCommand.hpp"
 #include "GeosCli/ConvexHullCommand.hpp"
 #include "GeosCli/CoordinatesCommand.hpp"
 #include "GeosCli/CountCommand.hpp"
